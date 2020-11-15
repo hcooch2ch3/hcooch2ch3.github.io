@@ -1,6 +1,6 @@
-title : Elementary - Jekyll Blog Theme
-name: 'Elementary Jekyll Theme'
-description: 'Simple, light weight, responsive jekyll theme for hackers'
+title : HCOOCH2CH3 - Swift/iOS Blog
+name: 'HCOOCH2CH3 - Swift/iOS Blog'
+description: 'iPhone!!!'
 
 markdown: kramdown
 highlighter: rouge
@@ -21,7 +21,7 @@ collections:
     default_open: false
     output: true
   posts:
-    title: Essays
+    title: Posts
     default_open: true
     output: true
 
