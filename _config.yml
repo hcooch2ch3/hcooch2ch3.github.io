@@ -16,10 +16,6 @@ featured_posts:
     title: 'Featured post #3'
 
 collections:
-  news:
-    title: News
-    default_open: false
-    output: true
   posts:
     title: Posts
     default_open: true
@@ -29,13 +25,8 @@ defaults:
   - scope:
       type: posts
     values:
-      title: Essays
+      title: Posts
       permalink: /post/:title
-  - scope:
-      type: news
-    values:
-      title: News
-      permalink: /news/:title
 
 plugins:
   - jekyll-sitemap
