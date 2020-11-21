@@ -1,6 +1,6 @@
-title : HCOOCH2CH3 - Swift/iOS Blog
-name: 'HCOOCH2CH3 - Swift/iOS Blog'
-description: 'iPhone!!!'
+title : 밤(hcooch2ch3) - Swift/iOS Blog
+name: '밤(hcooch2ch3) - Swift/iOS Blog'
+description: '밤(hcooch2ch3) - Swift/iOS Blog'
 
 markdown: kramdown
 highlighter: rouge
@@ -10,10 +10,6 @@ featured_posts_title: Unrelated
 featured_posts:
   - url: '#'
     title: 'Featured post #1'
-  - url: '#'
-    title: 'Featured post #2'
-  - url: '#'
-    title: 'Featured post #3'
 
 collections:
   posts:
