@@ -2,9 +2,7 @@
 layout: post
 title: DispatchQueue  serial/concurrent VS sync/async
 tags: 
-- DispatchQueue
-- sync/async
-- serial/concurrent
+- dispatchqueue
 ---
 
 DispatchQueue를 사용하면서 serial/concurrent VS sync/async 의 차이가 무엇인지 정확히 모르고 사용했었다.

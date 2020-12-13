@@ -2,8 +2,8 @@
 layout: post
 title: View Controller Life Cycle
 tags: 
-- View Controller
-- Life Cycle
+- viewcontroller
+- lifecycle
 ---
 
 View Controller는 View와 Model 중간에서 매개하는 역할을 하며 View를 관리한다.

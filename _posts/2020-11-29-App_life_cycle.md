@@ -2,9 +2,9 @@
 layout: post
 title: App's(or Scene) Life Cycle 
 tags: 
-- App
-- Scene
-- Life Cycle
+- app
+- scene
+- lifecycle
 ---
 
 App(또는 Scene)은 View Controller와 마찬가지로 Life Cycle이 있다.
