@@ -4,10 +4,10 @@ title: Tags
 ---
 
 {% assign alldocs = site.documents %}
-{% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by_exp: "tag","tag" %}
+{% assign alltags =  alldocs | map: 'tags' | join: ','  | split: ','  | group_by: tag %}
 
 <p>
-  Articles on similar topics are grouped together by tags. Click on any tag to find all the articles 'tagged' with that tag.
+  아래와 같이 글의 토픽(주제)에 따라 글이 분류되어 있습니다. 원하는 토픽을 선탁하시면, 해당 토픽에 관련된 글 목록으로 이동합니다. (블로그 템플릿 특성상 토픽을 카멜케이스로 입력할 수 없으므로 양해 부탁드립니다.)
 </p>
 <ul class="tag-box">
     {% for tag in alltags %}
