@@ -6,11 +6,6 @@ markdown: kramdown
 highlighter: rouge
 javascript_enabled: true
 
-featured_posts_title: Unrelated
-featured_posts:
-  - url: '#'
-    title: 'Featured post #1'
-
 collections:
   posts:
     title: Posts
