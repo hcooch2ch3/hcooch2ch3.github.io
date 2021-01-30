@@ -4,7 +4,7 @@ title: App's(or Scene) Life Cycle
 tags: 
 - app
 - scene
-- lifecycle
+- life-cycle
 ---
 
 App(또는 Scene)은 View Controller와 마찬가지로 Life Cycle이 있다.

@@ -2,8 +2,8 @@
 layout: post
 title: Content Hugging VS Compression Resistance
 tags: 
-- content hugging priority
-- compression resistance priority
+- content-hugging-priority
+- compression-resistance-priority
 - autolayout
 ---
 
@@ -13,7 +13,7 @@ Content Hugging과 Compression Resistance은 상황의존적이다. 뷰가 늘�
 
 Content Hugging은 View가 Content를 감싸려고 하는 성질이다. 그래서 View가 Cotent를 감싸려고 하기 때문에 View가 커져야 하는 상황에서 커지지 않게 한다. 반면에 Compression Resistance는 View가 압축에 저항하는 성질이다. 그래서 View가 작아져야 하는 상황에서 작아지지 않게 한다.
 
-사실 Content Hugging과 Compression Resistance 그 자체는 레이아웃을 구현하는데 직접 사용되는 것은 아니고 일종의 관념(?)일 뿐이다. 실제론 Content Hugging Priority와 Compression Resistance Priority가 레이아웃을 구현하는데 사용된다. 뷰 크기가 확장되어야 할때 어떤 뷰를 확장시킬건지를 결정하는 값이 Content Hugging Priority이고, 뷰 크기가 축소되어야 할때 어떤 뷰를 축소시킬건지를 결정하는 값이 Compression Resistance Priority 이다. Priority는 1~1000 범위의 값으로 설정 가능하다. Priority가 1000일때 가장 크기가 변환되기 어렵고, 1일때 가장 크기가 변환되기 쉽다.
+사실 Content Hugging과 Compression Resistance 그 자체는 레이아웃 구현에 직접 사용되는 것은 아니고 일종의 관념(?)일 뿐이다. 실제론 Content Hugging Priority와 Compression Resistance Priority가 레이아웃을 구현하는데 사용된다. 뷰 크기가 확장되어야 할때 어떤 뷰를 확장시킬건지를 결정하는 값이 Content Hugging Priority이고, 뷰 크기가 축소되어야 할때 어떤 뷰를 축소시킬건지를 결정하는 값이 Compression Resistance Priority 이다. Priority는 1~1000 범위의 값으로 설정 가능하다. Priority가 1000일때 가장 크기가 변환되기 어렵고, 1일때 가장 크기가 변환되기 쉽다.
 
 다음은 Compression Resistance Priority에 따라 어떻게 뷰 크기가 바뀌는지에 대한 예제이다.
 
