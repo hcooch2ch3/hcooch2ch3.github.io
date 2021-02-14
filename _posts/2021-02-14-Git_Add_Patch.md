@@ -183,3 +183,7 @@ speak 메서드의 구현을 add 하지 않고 bark 메서드의 삭제만 add �
 ![git add -p Dog.swift edit plus](/assets/images/git_add_patch_edit_plus.png)
 
 이처럼  'e'를 통해 add할 코드와 하지 않을 코드를 한 줄씩 직접 편집하여, hunk 단위로 add 하는 불편함을 해결할 수 있다.
+
+## 참고
+- git add -p의 모든 선택지에 대한 설명,  [https://git-scm.com/docs/git-add](https://git-scm.com/docs/git-add)
+- git add -p의 s 선택지가 왜 선택 불가능한가?, [https://stackoverflow.com/questions/38029869/why-is-split-option-missing-in-git-add-p](https://stackoverflow.com/questions/38029869/why-is-split-option-missing-in-git-add-p)
