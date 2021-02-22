@@ -18,7 +18,8 @@ body {
   display: flex;
   flex-direction: column;
   max-width: 700px;
-  margin: 0px 10px auto;
+  margin: 0px auto;
+  padding: 0px 12px;
 }
 
 .container {
@@ -303,7 +304,7 @@ table {
 // media queries
 @media screen and (max-width: 700px) {
   body {
-    margin: 0px 10px;
+    margin: 0px;
   }
 }
 
