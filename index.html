@@ -18,7 +18,7 @@ cover: false
           <h3 class="home-page-heading">{{ collection.title }}</h3>
         </summary>
         <div class="parent">
-          {% for post in collection.docs %}
+          {% for post in collection.docs reversed %}
           <div class="post-wrapper">
             <time class="post-date" datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%m/%Y" }}</time>
             <a class="post-link" href="{{ post.url }}">
