@@ -11,6 +11,10 @@ collections:
     title: Posts
     default_open: true
     output: true
+  tiltwl:
+    title: TIL/TWL
+    default_open: false
+    output: true
 
 defaults:
   - scope:
@@ -18,6 +22,11 @@ defaults:
     values:
       title: Posts
       permalink: /post/:title
+  - scope:
+      type: tiltwl
+    values:
+      title: TIL/TWL
+      permalink: /tiltwl/:title
 
 plugins:
   - jekyll-sitemap
