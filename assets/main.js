@@ -7,17 +7,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const init = () => {
   const darkSwitchesArray = document.querySelectorAll('.dark-light-switch');
+  let nightMode = getCookie('nightMode');
   darkSwitchesArray.forEach(darkSwitch => {
-    darkSwitch.innerHTML = getCookie('nightMode') ? light : dark;
+    darkSwitch.innerHTML = nightMode ? light : dark;
     darkSwitch.addEventListener('click', handleNightModeToggle);
   });
-  checkCookie();
-};
-
-const checkCookie = () => {
-  if(getCookie('nightMode')) {
-    toggleDarkMode();
-  }
+    if(nightMode) {
+        document.body.classList.toggle('dark', true);
+    } else {
+        document.body.classList.toggle('dark', false);
+    }
+    setComment();
 };
 
 const handleNightModeToggle = () => {
