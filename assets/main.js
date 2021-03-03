@@ -36,7 +36,27 @@ const toggleDarkMode = () => {
     darkSwitch.innerHTML = getCookie('nightMode') ? light : dark;
   });
   document.body.classList.toggle('dark');
+  setComment()
 };
+
+function setComment() {
+  let commentSection = document.getElementById('comment');
+  if(commentSection == null)
+      return
+      
+  while(commentSection.firstChild) commentSection.firstChild.remove()
+      
+  let theme = getCookie('nightMode') ? 'github-dark' : 'github-light';
+  let commentScript = document.createElement('script');
+  commentScript.setAttribute('src', 'https://utteranc.es/client.js');
+  commentScript.setAttribute('repo', 'hcooch2ch3/hcooch2ch3.github.io');
+  commentScript.setAttribute('issue-term', 'pathname');
+  commentScript.setAttribute('label', '✨💬✨');
+  commentScript.setAttribute('theme', theme);
+  commentScript.setAttribute('crossorigin', 'anonymous');
+  commentScript.async = true;
+  commentSection.appendChild(commentScript);
+}
 
 // https://stackoverflow.com/questions/14573223/set-cookie-and-get-cookie-with-javascript
 function setCookie(name,value,days) {
