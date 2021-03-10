@@ -85,8 +85,17 @@ function getCookie(name) {
 let scrollPercent;
 let scrollListener = () => {
   let scrollTop = document.documentElement["scrollTop"] || document.body["scrollTop"];
+  var paginationHeight = 0
+  if (document.getElementsByClassName("pagination").length > 0) {
+      paginationHeight = (document.getElementsByClassName("pagination")[0].offsetHeight || document.getElementsByClassName("pagination")[0].clientHeight)
+  }
+  let commentHeight = (document.getElementById('comment').offsetHeight || document.getElementById('comment').clientHeight)
+  var footerHeight = 0
+    if (document.getElementsByTagName("footer").length > 0) {
+        footerHeight = (document.getElementsByTagName("footer")[0].offsetHeight || document.getElementsByTagName("footer")[0].clientHeight)
+    }
   let scrollBottom = (document.documentElement["scrollHeight"] ||
-    document.body["scrollHeight"]) - document.documentElement.clientHeight;
+      document.body["scrollHeight"]) - (document.documentElement.clientHeight + commentHeight + paginationHeight + footerHeight);
   scrollPercent = scrollTop / scrollBottom * 100 + "%";
   let progress = document.getElementById("_progress");
   progress && progress.style.setProperty("--scroll", scrollPercent);
