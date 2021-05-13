@@ -1,7 +1,5 @@
 ---
-layout: page
+layout: mdpage
 title: Portfolio
 ---
 
-<p>
-</p>
