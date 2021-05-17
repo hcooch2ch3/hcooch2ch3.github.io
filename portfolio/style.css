@@ -404,6 +404,10 @@ button:focus {
 	width: 100%;
 }
 
+.mu-featured-content>p {
+    word-break: keep-all;
+}
+
 .mu-featured-content p{
 	color: #fff;
 }
@@ -432,8 +436,30 @@ button:focus {
 	width: 100%;
 }
 
-.mu-side-area>p {
-    font-size: 20px;
+.mu-project {
+    display: inline;
+    float: left;
+    text-align: center;
+    margin-top: 50px;
+    width: 100%;
+}
+
+.mu-project>h2 {
+    margin-bottom: 12px;
+}
+
+.mu-project>p {
+    margin: 12px 0px 15px 0px;
+    font-size: 22px;
+}
+
+.mu-project i {
+    font-size: 50px;
+}
+
+.mu-project-links {
+    width: 30%;
+    display: inline-block;
 }
 
 .mu-side-header {
