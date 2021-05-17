@@ -445,21 +445,26 @@ button:focus {
 }
 
 .mu-project>h2 {
-    margin-bottom: 12px;
+    margin-bottom: 8px;
 }
 
-.mu-project>p {
-    margin: 12px 0px 15px 0px;
-    font-size: 22px;
+.mu-project p {
+    margin: 8px 10% 11px 10%;
+    font-size: 20px;
 }
 
 .mu-project i {
-    font-size: 50px;
+    font-size: 45px;
 }
 
 .mu-project-links {
-    width: 30%;
+    word-break: keep-all;
+    width: 27%;
     display: inline-block;
+}
+
+.mu-project .col-sm-4 {
+    padding: 0px 10px 0px 10px;
 }
 
 .mu-side-header {
@@ -1247,8 +1252,11 @@ button:focus {
 	.mu-contact-top-single {
 		margin-bottom: 25px;
 	}
+    
+    .mu-project .col-sm-4 img {
+        max-width: 40%;
+    }
 	
-		
 }
 
 
