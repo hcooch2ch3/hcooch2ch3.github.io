@@ -50,6 +50,7 @@
 		    typeSpeed: 30,
 		    backSpeed: 30,
 		    startDelay: 1000,
+            backDelay: 1500,
 		    loop: true,
 		    loopCount: Infinity
 		});
