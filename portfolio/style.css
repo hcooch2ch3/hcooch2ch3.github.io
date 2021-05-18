@@ -450,7 +450,7 @@ button:focus {
 
 .mu-project p {
     word-break: break-word;
-    margin: 8px 10% 11px 10%;
+    margin: 5px 10% 5px 10%;
     font-size: 20px;
 }
 
@@ -459,6 +459,7 @@ button:focus {
 }
 
 .mu-project-links {
+    margin-top: 5px;
     word-break: keep-all;
     width: 25%;
     display: inline-block;
