@@ -165,7 +165,7 @@ let pattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
 
 ## 마무리
  
-간단하게 요약해보자면, Swift에서 정규표현식을 사용하기 위해서는 정규표현식 패턴과 옵션을 입력한 NSRegularExpression 객체를 생성하여야 한다. 생성된 객체의 여러 match 메서드를 이용하여 정규표현식 패턴과 문자열이 매치되는지 확인할 수 있다. 
+간단하게 요약해보자면, Swift에서 정규표현식을 사용하기 위해서는 정규표현식 패턴과 옵션을 입력한 NSRegularExpression 객체를 생성하여야 한다. 생성된 객체의 여러 match 메서드를 이용하여 정규표현식 패턴과 문자열이 매치되는지 확인할 수 있다. 또한 NSRegularExpression은 다양한 정규표현식 옵션, 다양한 match 메서드, 그리고 다양한 match 옵션을 제공한다.
 
 정규표현식을 제대로 사용하기 위해서는 Metacharacter와 Operator의 사용방법에 대해서 자세히 알아야 한다. 특히 Look-around Operator(Look-ahead, Look-behind)을 이용하여 정규표현식을 더 잘 사용할 수 있다.
 
@@ -175,5 +175,5 @@ let pattern = "^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z]).{8,}$"
 - NSRegularExpression 애플 공식문서: <https://developer.apple.com/documentation/foundation/nsregularexpression>
 - Regular Expression: <https://en.wikipedia.org/wiki/Regular_expression>
 - What is .WithTransparentBounds?: <https://stackoverflow.com/questions/37605358/what-is-withtransparentbounds>
-- Password Regular Expression: https://www.ocpsoft.org/tutorials/regular-expressions/password-regular-expression/
-- 전방탐색과 후방탐색: http://minsone.github.io/regex/regexp-lookaround
+- Password Regular Expression: <https://www.ocpsoft.org/tutorials/regular-expressions/password-regular-expression/>
+- 전방탐색과 후방탐색: <http://minsone.github.io/regex/regexp-lookaround>
