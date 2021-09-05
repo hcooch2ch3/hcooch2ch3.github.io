@@ -450,7 +450,7 @@ button:focus {
 
 .mu-project p {
     word-break: break-word;
-    margin: 5px 10% 5px 10%;
+    margin: 5px 5% 5px 5%;
     font-size: 20px;
 }
 
@@ -459,7 +459,7 @@ button:focus {
 }
 
 .mu-project-links {
-    margin-top: 5px;
+    margin-top: 30px;
     word-break: keep-all;
     width: 25%;
     display: inline-block;
@@ -762,6 +762,11 @@ button:focus {
 .filtr-item:hover .mu-item-thumbonail img {
 	-webkit-transform: scale(1.1);
 	        transform: scale(1.1);
+}
+
+.different-size-image {
+	display: flex;
+    align-items: center;
 }
 
 .filtr-item:hover .mu-filter-item-content{
@@ -1374,8 +1379,10 @@ button:focus {
 		padding: 20% 5%;
 	}
 
-				
-	
+	.different-size-image {
+		display: contents;
+	}
+
 }
 
 
