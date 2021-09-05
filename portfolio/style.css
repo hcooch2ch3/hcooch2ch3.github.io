@@ -769,6 +769,10 @@ button:focus {
     align-items: center;
 }
 
+.landscape-iphone-image {
+	padding-right: 0px;
+}
+
 .filtr-item:hover .mu-filter-item-content{
 	opacity: 0.94;
 }
