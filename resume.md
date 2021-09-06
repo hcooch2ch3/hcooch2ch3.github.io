@@ -17,10 +17,9 @@ title: Resume
 
 ### 경험
 - 한국정보통신기술협회(TTA) 차세대이동통신단 전임연구원 (2018.09 ~ 2020.09)
-    - 자급제 단말기 시험인증 업무 담당.
-    - 4G 단말기 망연동 시험 진행 및 5G 단말기 망연동 시험 절차 연구.
+    - 자급제 4G 단말기 망연동 시험 진행 및 5G 단말기 망연동 시험 절차 연구.
 - 숭실대학교 소프트웨어공학 연구실 학부연구생 (2016.07 ~ 2017.08)
-    - Android, Web Front-End(HTML, CSS, Javascript), Web Back-End(Spring) 개발 담당.
+    - Web Front-End(HTML, CSS, Javascript) 개발.
 
 ### 프로젝트
 - 개인 프로젝트
@@ -59,18 +58,6 @@ title: Resume
         - JSON 데이터를 활용하여 날씨정보를 보여주는 앱.
         - Codable, JSON Encoder/Decoder 등 사용.
 - 소프트웨어공학 연구실 프로젝트
-    - Influence Network Analysis System (2017.01 ~ 2017.09)
-        - Web App (2인 팀개발)
-        - 사람들 간의 영향력을 그래프로 나타내어 분석하는 웹.
-        - Web Back-End 담당
-    - Rainbow Platform Admin Web Application (2016.10 ~ 2016.12)
-        - Web App (2인 팀개발)
-        - Rainbow Platform(건강 정보 분석 플랫폼)의 관리자 전용 웹.
-        - Web Front-End 담당
-    - Rainbow Health Indicator System for Android (2016.09 ~ 2016.11)
-        - Android App (2인 팀개발)
-        - 사용자의 건강 정보를 보여주는 안드로이드 앱.
-        - Android 개발 담당
     - Rainbow Health Indicator System (2016.07 ~ 2016.08)
         - Web App (5인 팀개발)
         - 사용자의 다양한 건강 정보를 텍스트 및 그래프로 보여주는 웹.
