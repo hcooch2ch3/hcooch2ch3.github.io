@@ -423,7 +423,7 @@ button:focus {
 
 
 #mu-side {
-	background-color: #fff;
+	background-color: #f7f7f7;
 	display: inline;
 	float: left;
 	width: 100%;
@@ -599,7 +599,7 @@ button:focus {
 
 
 #mu-yagom {
-    background-color: #f7f7f7;
+    background-color: #fff;
 	display: inline;
 	float: left;
 	width: 100%;
