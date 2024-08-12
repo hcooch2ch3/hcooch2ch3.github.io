@@ -336,14 +336,14 @@ button:focus {
 }
 
 .mu-featured-area {
-	display: flex;
-	flex-direction: column;
-	justify-content: center; 
-	align-items: center; 
-	width: 100%;
-	height: 100vh;
-	padding: 0 10%; 
-	text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  padding: 0 10%;
+  text-align: center;
 }
 
 .mu-featured-area h1 {
@@ -390,10 +390,10 @@ button:focus {
 }
 
 .mu-featured-content {
-    max-width: 800px; 
-    margin: 0 auto; 
-    padding: 0 20px; 
-    text-align: justify; 
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: justify;
 }
 
 .mu-featured-content > p {
@@ -581,21 +581,21 @@ button:focus {
   color: #fff;
 }
 
-/*--------------------*/
-/* FutureKitchen PROJECT */
-/*--------------------*/
-
-#mu-futurekitchen {
-  background-color: #f7f7f7;
-  display: inline;
-  float: left;
-  width: 100%;
+.mu-project-content {
+  max-width: 85%;
+  margin: 0 auto;
+  margin-top: 20px;
+  padding: 0 20px;
+  text-align: justify;
 }
-/* 
-.a4-component {
-  height: 297mm; /* or 3508px */
-  /* page-break-after: always; */
-} */
+
+.mu-project-content > p {
+  word-break: keep-all;
+}
+
+.mu-project-content a {
+  margin-top: 35px;
+}
 
 /*--------------------*/
 /* YAGOM */
@@ -667,6 +667,24 @@ button:focus {
   margin-bottom: 0;
   color: #555;
   letter-spacing: 0.5px;
+}
+
+/*--------------------*/
+/* ETC */
+/*--------------------*/
+
+.even-section {
+  background-color: #fff;
+  display: inline;
+  float: left;
+  width: 100%;
+}
+
+.odd-section {
+  background-color: #f7f7f7;
+  display: inline;
+  float: left;
+  width: 100%;
 }
 
 /*--------------------*/
