@@ -423,7 +423,6 @@ button:focus {
   display: inline;
   float: left;
   text-align: center;
-  /* margin-top: 50px; */
   width: 100%;
 }
 
@@ -588,6 +587,11 @@ button:focus {
 
 .mu-project-content a {
   margin-top: 35px;
+}
+
+.mu-project > .row {
+  display: flex;
+  justify-content: center;
 }
 
 /*--------------------*/
@@ -1299,6 +1303,16 @@ button:focus {
 }
 
 @media (max-width: 480px) {
+  .mu-project > .row {
+    display: block;
+    justify-content: flex-start;
+  }
+
+  .mu-project-content {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
   #mu-header {
     padding: 10px 0;
   }
@@ -1422,4 +1436,44 @@ button:focus {
 }
 
 @media (max-width: 320px) {
+}
+
+@media print {
+  .odd-section,
+  .even-section {
+    max-height: 210mm;
+    break-after: always !important;
+    break-inside: avoid !important;
+  }
+
+  .mu-project > .row > div {
+    max-height: 25%;
+  }
+  .mu-profile-img {
+    max-height: 100%;
+  }
+
+  .mu-project-content {
+    max-width: 100%;
+    padding: 0 10px;
+    margin-top: 5px;
+  }
+
+  #mu-contact,
+  #mu-footer,
+  .mu-header-dot {
+    display: none;
+  }
+
+  .mu-side-area {
+    padding: 5px 0;
+  }
+  .mu-heading-title {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    font-size: 36px !important;
+  }
+  .mu-project > .row > .col-sm-5 {
+    padding: 0;
+  }
 }
