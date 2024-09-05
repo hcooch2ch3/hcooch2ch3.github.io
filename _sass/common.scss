@@ -7,7 +7,8 @@
   margin: 3px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -30,9 +31,12 @@ footer {
   flex-shrink: 0;
 }
 
-*, iframe, img, video {
+*,
+iframe,
+img,
+video {
   word-wrap: break-word;
-  max-width:100%;
+  max-width: 100%;
 }
 
 img {
@@ -40,13 +44,17 @@ img {
   margin: 0 auto;
 }
 
-code, pre {
+code,
+pre {
   font-family: monospace;
   background-color: #eee;
   letter-spacing: 1px;
   font-size: 0.9rem;
   padding: 2.5px;
   overflow-x: auto;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  max-width: 100%;
 }
 
 .highlight {
@@ -114,7 +122,7 @@ a:hover {
 .next {
   max-width: 50%;
   float: right;
-  text-align: right
+  text-align: right;
 }
 
 .pagination {
@@ -125,7 +133,7 @@ a:hover {
 .pagination::after {
   content: "";
   clear: both;
-  display: block
+  display: block;
 }
 
 blockquote {
@@ -173,8 +181,8 @@ h1 {
 }
 
 h2 {
-  margin: .75rem 0;
-  letter-spacing: .5px;
+  margin: 0.75rem 0;
+  letter-spacing: 0.5px;
 }
 
 h3 {
@@ -189,7 +197,8 @@ h4 {
   letter-spacing: 0.5px;
 }
 
-h5, h6 {
+h5,
+h6 {
   margin: 0.75rem 0;
   letter-spacing: 0.5px;
 }
@@ -208,7 +217,8 @@ h3.home-page-heading {
   margin: 10px auto;
 }
 
-ul, ol {
+ul,
+ol {
   padding-left: 25px;
 }
 
@@ -233,7 +243,11 @@ figcaption {
 hr.stylish {
   border: 0;
   height: 1px;
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1));
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 1),
+    rgba(0, 0, 0, 1)
+  );
   margin: 5px 0;
 }
 
@@ -254,12 +268,18 @@ button {
 }
 
 details[open] summary ~ * {
-  animation: sweep .4s ease-in-out;
+  animation: sweep 0.4s ease-in-out;
 }
 
 @keyframes sweep {
-  0%    {opacity: 0; margin-top: -10px}
-  100%  {opacity: 1; margin-top: 0px}
+  0% {
+    opacity: 0;
+    margin-top: -10px;
+  }
+  100% {
+    opacity: 1;
+    margin-top: 0px;
+  }
 }
 
 .home-main {
@@ -269,7 +289,7 @@ details[open] summary ~ * {
 ._progress-wrapper {
   position: fixed;
   width: 100%;
-  height: .33rem;
+  height: 0.33rem;
   top: 0;
   left: 0;
   z-index: 100;
@@ -279,20 +299,25 @@ details[open] summary ~ * {
 
 #_progress {
   --scroll: 0%;
-  background: linear-gradient(to right, rgb(51, 51, 51) var(--scroll), transparent 0);
+  background: linear-gradient(
+    to right,
+    rgb(51, 51, 51) var(--scroll),
+    transparent 0
+  );
   width: 100%;
   height: 100%;
 }
 
 .featured-posts {
-  padding: .75rem 0 1rem;
+  padding: 0.75rem 0 1rem;
 }
 
 table {
   width: 100%;
   border-collapse: collapse;
 
-  th, td {
+  th,
+  td {
     padding: 5px;
   }
 }
