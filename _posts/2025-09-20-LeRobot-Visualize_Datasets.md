@@ -11,7 +11,7 @@ tags:
 
 처음엔 이게 Gazebo 같은 시뮬레이터로 SO-101 로봇팔을 시뮬레이팅 하는 것이라 생각하고 진행했는데, SO-101도 아니었고 시뮬레이터도 아니었다. ALOHA 로봇팔에 대한 데이터셋을 시각화?하는 방법에 좀 더 가까운 것 같다. 
 
-“시뮬레이션”이란 가상의 환경을 실시간으로 계산·갱신하며 새로운 상호작용을 만들어내는 과정이고, visualize_dataset은 그런 과정 없이 기록된 데이터를 재생하는 ‘리플레이/플레이어’이기 때문에 시뮬레이션이 아니다.
+“시뮬레이션”이란 가상의 환경을 실시간으로 계산 / 갱신하며 새로운 상호작용을 만들어내는 과정이고, visualize_dataset은 그런 과정 없이 기록된 데이터를 재생하는 ‘리플레이 / 플레이어’이기 때문에 이건 시뮬레이션이 아니라고 한다.
 
 아무튼, 정리한 배경지식 & 용어와 ALOHA 데이터셋 시각화 방법은 다음과 같다.
 
@@ -40,11 +40,6 @@ Hugging Face가 개발한 오픈소스 로봇 AI 플랫폼으로, 로봇 제어�
     - 시뮬레이터와 실제 로봇을 동일한 인터페이스로 다룰 수 있어 **sim2real 이전**을 쉽게 시도할 수 있다.
     - 전체 시스템 비용은 약 **2만 달러 수준**(약 2700 ~ 2800 만원)으로, 산업용 로봇 대비 저렴하지만 연구 장비치고는 여전히 고가
 
-### Rerun.io
-- **목적**: 센서·이미지·3D 데이터를 실시간 스트리밍하고 시각화하여 디버깅 / 분석을 할 수 있게 하는 툴
-- **특징**: TensorBoard와 유사하지만 3D·로봇/센서 데이터 실시간 시각화에 강점이며, Gazebo·Unity 같은 시뮬레이터가 아닌 시뮬레이션, 실로봇에서 생성된 데이터를 시각화하는 용도로 사용된다.
-- **공식 사이트**: https://rerun.io
-
 ### PushT (Push Task)
 
 탁자 위 물체를 목표 지점까지 **미는(push)** 조작을 수행하는 **간단한 벤치마크 환경**.
@@ -53,6 +48,11 @@ Hugging Face가 개발한 오픈소스 로봇 AI 플랫폼으로, 로봇 제어�
 - **특징**
     - 2D 평면에서 물체를 목표로 이동시키며, **경로 계획/접촉 물리(contact physics)** 등 기본 제어 능력을 검증하기 적합
     - 이미지/상태 정보 모두를 관찰값으로 활용 가능하고, 빠른 학습/알고리즘 비교가 용이하다.
+
+### Rerun.io
+- **목적**: 센서·이미지·3D 데이터를 실시간 스트리밍하고 시각화하여 디버깅 / 분석을 할 수 있게 하는 툴
+- **특징**: TensorBoard와 유사하지만 3D·로봇/센서 데이터 실시간 시각화에 강점이며, Gazebo·Unity 같은 시뮬레이터가 아닌 시뮬레이션, 실로봇에서 생성된 데이터를 시각화하는 용도로 사용된다.
+- **공식 사이트**: [https://rerun.io](https://rerun.io)
 
 ### 기타 용어
 - **End-to-end 정책 학습**: 이미지 등 원시 센서 입력을 받아 곧바로 행동을 출력하는 하나의 신경망을 학습하는 방식이다. 모듈별 오류 누적이 없고 전체 최적화가 가능하다는 장점이 있지만, 해석이 어렵고 대량의 데이터 및 안전성을 확보해야 한다는 단점이 있다.
@@ -63,11 +63,11 @@ Hugging Face가 개발한 오픈소스 로봇 AI 플랫폼으로, 로봇 제어�
 
 ## 실행해보기
 ### 실행 환경
-- Apple Silicon (Macbook Pro M4 MAX)
+- Apple Silicon (Macbook Pro M4)
 
 ### 실행 방법
 (1) miniconda 설치
-- https://www.anaconda.com/download/success
+- [https://www.anaconda.com/download/success](https://www.anaconda.com/download/success)
 
 ![miniconda](/assets/images/lerobot/miniconda.png)
 
@@ -146,7 +146,7 @@ python -m lerobot.scripts.visualize_dataset \
 
 ## 참고
 
-- [HuggingFace LeRobot](https://github.com/huggingface/lerobot)
-- [Mobile ALOHA](https://mobile-aloha.github.io/)
-- [aloha_sim_insertion_human](https://huggingface.co/lerobot/act_aloha_sim_insertion_human )
-- [rerun.io](http://rerun.io)
+- HuggingFace LeRobot: [https://github.com/huggingface/lerobot](https://github.com/huggingface/lerobot)
+- Mobile ALOHA: [https://mobile-aloha.github.io/](https://mobile-aloha.github.io/)
+- aloha_sim_insertion_human: [https://huggingface.co/lerobot/act_aloha_sim_insertion_human](https://huggingface.co/lerobot/act_aloha_sim_insertion_human)
+- rerun.io: [https://rerun.io](https://rerun.io)
