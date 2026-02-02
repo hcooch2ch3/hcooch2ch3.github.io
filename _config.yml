@@ -11,6 +11,10 @@ collections:
     title: Posts
     default_open: true
     output: true
+  notes:
+    title: Notes
+    default_open: true
+    output: true
   til:
     title: TIL
     default_open: false
@@ -22,6 +26,11 @@ defaults:
     values:
       title: Posts
       permalink: /post/:title
+  - scope:
+      type: notes
+    values:
+      title: Notes
+      permalink: /notes/:title
   - scope:
       type: til
     values:
